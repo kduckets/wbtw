@@ -25,8 +25,9 @@ export default function Home() {
           target="_blank"
           rel="noopener noreferrer"
         >
-          powered by{' '}
+          <small>powered by{' '}
           wbtw
+          </small>
         </a>
       </footer>
 
