@@ -29,7 +29,7 @@ export default function Demos() {
           </footer>
 
           <Link href="/">
-              <code><a>go_home</a></code>
+              <code><a>go home</a></code>
             </Link>
         </Layout>
         
