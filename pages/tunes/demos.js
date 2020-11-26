@@ -29,13 +29,13 @@ export default function Demos() {
               <small><i><b>all wbtw demos were recorded in scott's basement and mixed by scott</b>
                  
                  <p>wbtw is:</p> 
+
+                   <p>nick - keys, sax, flute, bass clarinet, etc, vocals</p>
                   
                    <p>andy - drums, vocals, count-offs</p>
                  
                    <p>steve - bass, moog, brown notes</p>
-                  
-                   <p>nick - keys, sax, flute, bass clarinet, etc, vocals</p>
-                
+                     
                    <p>scott - guitar, sax, vocals, garage banding</p>
 
                    <p>kev - guitar, loud noises</p>
