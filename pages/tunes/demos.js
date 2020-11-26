@@ -24,13 +24,36 @@ export default function Demos() {
          />
         </div>
         </div>
-          <footer>
-              <small><i>all wbtw demos were recorded in scott's basement and mixed by scott</i></small>
-          </footer>
+          <div>
+              <br/>
+              <small><i><b>all wbtw demos were recorded in scott's basement and mixed by scott</b>
+                 
+                 <p>wbtw is:</p> 
+                  
+                   <p>andy - drums, vocals, count-offs</p>
+                 
+                   <p>steve - bass, moog, brown notes</p>
+                  
+                   <p>nick - keys, sax, flute, bass clarinet, etc, vocals</p>
+                
+                   <p>scott - guitar, sax, vocals, garage banding</p>
 
-          <Link href="/">
+                   <p>kev - guitar w/ cool pedals</p>
+                 
+                  </i></small>
+
+                  <br/>
+             
+          <div>
+           <Link href="/">
               <code><a>go home</a></code>
             </Link>
+            </div>
+            
+          </div>
+      
+
+         
         </Layout>
         
       )
