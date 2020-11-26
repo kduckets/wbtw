@@ -7,7 +7,7 @@ export default function Demos() {
         <Layout>  
             <h1>/wbtw_demos</h1>
         <div className="card">
-          <code>demos_2020</code>
+          <code><span className="blink">demos_2020</span></code>
           <div>
          <ReactPlayer
         url="https://soundcloud.com/webroketheweather/sets/demos-2020"
@@ -16,7 +16,7 @@ export default function Demos() {
         </div>
         </div>  
         <div className="card">
-        <code>demos_2019</code>
+        <code><span className="blink">demos_2019</span></code>
           <div>
          <ReactPlayer
         url="https://soundcloud.com/webroketheweather/sets/demos-2019"

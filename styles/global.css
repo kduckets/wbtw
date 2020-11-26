@@ -131,8 +131,18 @@ img {
   .card:hover,
   .card:focus,
   .card:active {
-    color: black;
+    /* color: black; */
     border-color: #0070f3;
+  }
+
+  .blink {
+    animation: blinker 1s step-start infinite;
+  }
+  
+  @keyframes blinker {
+    50% {
+      opacity: 0;
+    }
   }
 
   .card h3 {
