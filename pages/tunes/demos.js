@@ -11,7 +11,7 @@ export default function Demos() {
           <div>
          <ReactPlayer
         url="https://soundcloud.com/webroketheweather/sets/demos-2020"
-        width="420px"
+        width="90%"
          />
         </div>
         </div>  
@@ -20,7 +20,7 @@ export default function Demos() {
           <div>
          <ReactPlayer
         url="https://soundcloud.com/webroketheweather/sets/demos-2019"
-        width="420px"
+        width="90%"
          />
         </div>
         </div>
@@ -29,8 +29,8 @@ export default function Demos() {
               <code><a>go home</a></code>
             </Link>
           </h2>
-
         </Layout>
+        
       )
     }
 
