@@ -1,11 +1,3 @@
-# next.js build output
+node_modules
 .next
-# dotenv environment variables file (build for Zeit Now)
-.env
-.env.build
-# Dependency directories
-node_modules/
-# Logs
-npm-debug.log*
-yarn-debug.log*
-yarn-error.log*
+package-lock.json

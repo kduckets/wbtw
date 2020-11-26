@@ -5,7 +5,7 @@ import Layout from '../../components/layout'
 export default function Demos() {
     return (
         <Layout>  
-            <h1>Demos</h1>
+            <h1>wbtw demos</h1>
         <div className="card">
           <code>demos 2020</code>
           <div>
