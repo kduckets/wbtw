@@ -133,7 +133,8 @@ img {
   .card:focus,
   .card:active {
     /* color: black; */
-    animation: blinker 2s step-start infinite;
+    animation: glitch 2s linear infinite;
+    /* animation: blinker 2s step-start infinite; */
     border-color: #0070f3;
     
   }
@@ -142,9 +143,19 @@ img {
       opacity: .69;
     }
   }
-  .blink {
-    animation: blinker 4.20s step-start infinite;
+
+  @keyframes glitch{
+    2%,64%{
+      transform: translate(2px,0) skew(0deg);
+    }
+    4%,60%{
+      transform: translate(-2px,0) skew(0deg);
+    }
+    62%{
+      transform: translate(0,0) skew(5deg); 
+    }
   }
+
   
 
 
