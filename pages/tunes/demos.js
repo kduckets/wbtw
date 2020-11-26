@@ -1,10 +1,16 @@
 import ReactPlayer from "react-player"
 import Layout from '../../components/layout'
+import Game from '../../components/game'
+import Head from 'next/head'
 
 
 export default function Demos() {
     return (
         <Layout>  
+      <Head>
+        <title>/wbtw/demos</title>
+        <link rel="icon" href="/favicon.png" />
+      </Head>
             <h1>/wbtw_demos</h1>
         <div className="card">
           <code>demos_2020</code>
@@ -49,8 +55,14 @@ export default function Demos() {
              
             <div>
               <code><a href="/" target="_blank">go home</a></code>
-            </div>        
-          </div>    
+            </div>      
+          </div>  
+
+
+ <div className="game">
+   <Game />
+ </div>
+
         </Layout>
         
       )
