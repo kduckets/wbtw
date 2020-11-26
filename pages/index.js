@@ -29,10 +29,6 @@ export default function Home() {
           </small>
         </Link>
       </footer>
-
-      <style jsx>{`
-        
-      `}</style>
     </div>
     </div>
   )
