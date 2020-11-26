@@ -24,11 +24,13 @@ export default function Demos() {
          />
         </div>
         </div>
-          <h2>
-            <Link href="/">
+          <footer>
+              <small><i>all wbtw demos recorded in scott's basement and mixed by scott</i></small>
+          </footer>
+
+          <Link href="/">
               <code><a>go home</a></code>
             </Link>
-          </h2>
         </Layout>
         
       )
