@@ -132,18 +132,20 @@ img {
   .card:focus,
   .card:active {
     /* color: black; */
+    animation: blinker 2s step-start infinite;
     border-color: #0070f3;
+    
   }
-
-  .blink {
-    animation: blinker 3.2s step-start infinite;
-  }
-  
   @keyframes blinker {
     50% {
       opacity: .420;
     }
   }
+  .blink {
+    animation: blinker 3.2s step-start infinite;
+  }
+  
+
 
   .card h3 {
     margin: 0 0 1rem 0;
