@@ -48,7 +48,8 @@ export default function Demos() {
                   <br/>
              
           <div>
-           <Link href="/">
+           <Link href="/"
+                 target="_blank">
               <code><a>go home</a></code>
             </Link>
             </div>
