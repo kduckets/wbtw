@@ -30,7 +30,7 @@ export default function Demos() {
                  
                  <p>wbtw is:</p> 
 
-                   <p>nick - keys, sax, flute, bass clarinet, etc, vocals</p>
+                   <p>nick - keys, sax, flute, etc, vocals</p>
                   
                    <p>andy - drums, vocals, count-offs</p>
                  
