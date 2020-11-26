@@ -133,7 +133,7 @@ img {
   .card:focus,
   .card:active {
     /* color: black; */
-    animation: glitch 2s linear infinite;
+    animation: glitch 6.9s linear infinite;
     /* animation: blinker 2s step-start infinite; */
     border-color: #0070f3;
     
