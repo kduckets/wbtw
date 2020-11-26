@@ -119,7 +119,8 @@ img {
 
   .card {
     flex-basis: 45%;
-    padding-top: 1.5rem;
+    height:100%;
+    /* padding-top: 1.5rem; */
     text-align: left;
     color: #0070f3;
     text-decoration: none;
