@@ -3,7 +3,6 @@ import Link from 'next/link'
 
 export default function Home() {
   return (
-    <div className="locked">
     <div className="container">
       <Head>
         <title>we broke the weather</title>
@@ -29,7 +28,6 @@ export default function Home() {
           </small>
         </Link>
       </footer>
-    </div>
     </div>
   )
 }
