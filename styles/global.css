@@ -136,7 +136,7 @@ img {
   }
 
   .blink {
-    animation: blinker 1s step-start infinite;
+    animation: blinker 3s step-start infinite;
   }
   
   @keyframes blinker {
