@@ -121,7 +121,7 @@ img {
     flex-basis: 45%;
     padding-top: 1.5rem;
     text-align: left;
-    color: inherit;
+    color: #0070f3;
     text-decoration: none;
     /* border: 1px solid #eaeaea;
     border-radius: 10px; */
@@ -131,7 +131,7 @@ img {
   .card:hover,
   .card:focus,
   .card:active {
-    color: #0070f3;
+    color: black;
     border-color: #0070f3;
   }
 
