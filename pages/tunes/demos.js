@@ -38,7 +38,7 @@ export default function Demos() {
                 
                    <p>scott - guitar, sax, vocals, garage banding</p>
 
-                   <p>kev - guitar w/ cool pedals</p>
+                   <p>kev - guitar, loud noises</p>
                  
                   </i></small>
 
