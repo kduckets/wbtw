@@ -5,7 +5,7 @@ import Head from 'next/head'
 
 export default function Demos() {
     return (
-        <Layout>  
+      <Layout>  
       <Head>
         <title>/wbtw/demos</title>
         <link rel="icon" href="/favicon.png" />
