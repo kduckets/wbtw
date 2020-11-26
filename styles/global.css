@@ -136,12 +136,12 @@ img {
   }
 
   .blink {
-    animation: blinker 3s step-start infinite;
+    animation: blinker 3.2s step-start infinite;
   }
   
   @keyframes blinker {
     50% {
-      opacity: 0;
+      opacity: .420;
     }
   }
 
