@@ -215,6 +215,7 @@ img {
 
   .game{
     padding-top: 69px;
+    overflow: hidden;
   }
   
   @keyframes App-logo-spin {
