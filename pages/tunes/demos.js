@@ -50,13 +50,10 @@ export default function Demos() {
             <div>
               <code><a href="/" target="_blank">go home</a></code>
             </div>
-  
             <div>
          <Snake />
-            </div>
-            
-          </div>
-     
+            </div>         
+          </div>    
         </Layout>
         
       )
