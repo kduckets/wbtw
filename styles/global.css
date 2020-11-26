@@ -86,7 +86,16 @@ img {
     margin: 0;
     line-height: 1.15;
     font-size: 4rem;
-    animation: glitch 14.20s ease infinite;
+    animation: glitch2 14.20s ease infinite;
+  }
+
+  @keyframes glitch2{
+    2%,64%{
+      transform: translate(1px,0) skew(0deg);
+    }
+    62%{
+      transform: translate(0,0) skew(4deg); 
+    }
   }
 
   .title,
