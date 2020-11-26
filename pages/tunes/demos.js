@@ -5,9 +5,9 @@ import Layout from '../../components/layout'
 export default function Demos() {
     return (
         <Layout>  
-            <h1>wbtw demos</h1>
+            <h1>/wbtw_demos</h1>
         <div className="card">
-          <code>demos 2020</code>
+          <code>demos_2020</code>
           <div>
          <ReactPlayer
         url="https://soundcloud.com/webroketheweather/sets/demos-2020"
@@ -16,7 +16,7 @@ export default function Demos() {
         </div>
         </div>  
         <div className="card">
-        <code>demos 2019</code>
+        <code>demos_2019</code>
           <div>
          <ReactPlayer
         url="https://soundcloud.com/webroketheweather/sets/demos-2019"
@@ -29,7 +29,7 @@ export default function Demos() {
           </footer>
 
           <Link href="/">
-              <code><a>go home</a></code>
+              <code><a>go_home</a></code>
             </Link>
         </Layout>
         
