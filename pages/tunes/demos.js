@@ -1,6 +1,6 @@
 import ReactPlayer from "react-player"
 import Layout from '../../components/layout'
-import Snake from 'react-simple-snake'
+
 
 export default function Demos() {
     return (
@@ -49,10 +49,7 @@ export default function Demos() {
              
             <div>
               <code><a href="/" target="_blank">go home</a></code>
-            </div>
-            <div>
-         <Snake />
-            </div>         
+            </div>        
           </div>    
         </Layout>
         
