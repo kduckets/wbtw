@@ -36,7 +36,7 @@ export default function Demos() {
                   
                    <p>nick - keys, sax, flute, bass clarinet, etc, vocals</p>
                 
-                   <p>scott - guitar, sax, vocals, garage band engineering</p>
+                   <p>scott - guitar, sax, vocals, garage banding</p>
 
                    <p>kev - guitar, loud noises</p>
                  
