@@ -25,7 +25,7 @@ export default function Demos() {
         </div>
         </div>
           <footer>
-              <small><i>all wbtw demos recorded in scott's basement and mixed by scott</i></small>
+              <small><i>wbtw demos were recorded in scott's basement and mixed by scott</i></small>
           </footer>
 
           <Link href="/">
