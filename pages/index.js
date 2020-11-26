@@ -24,7 +24,7 @@ export default function Home() {
           href="/tunes/demos"
         >
           <small>powered by{' '}
-          wbtw
+          <span style={{color:"grey"}}>wbtw</span>
           </small>
         </Link>
       </footer>
