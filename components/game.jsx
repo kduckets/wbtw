@@ -230,7 +230,7 @@ class Game extends Component {
 
     render() {
         return (
-            <div style={{overscrollBehavior: 'contain', height: '100%', overflow: 'hidden', width: '100%'}}>
+            <div style={{overflowX:'hidden', overflowY:'scroll', height: '280px', width: '100%', position:'static'}}>
                 <canvas ref={this.canvasRef} width={maxSize} height={maxSize} style={{border: "1px solid black"}} />
                 <br/>
                 Score: {this.state.score*10} | Highscore: {this.state.highScore*10}

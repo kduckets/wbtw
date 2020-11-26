@@ -11,6 +11,7 @@ export default function Demos() {
         <title>/wbtw/demos</title>
         <link rel="icon" href="/favicon.png" />
       </Head>
+      <div className="demos">
             <h1>/wbtw_demos</h1>
         <div className="card">
           <code>demos_2020</code>
@@ -58,7 +59,7 @@ export default function Demos() {
             </div>      
           </div>  
 
-
+          </div>
  <div className="game">
    <Game />
  </div>
