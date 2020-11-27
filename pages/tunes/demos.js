@@ -117,10 +117,13 @@ const Demos = () => {
                    <p>scott - guitar, sax, vocals, garage banding</p>
 
                    <p>kev - guitar/loud noises</p>
+
+                   <p><a className="email" href="mailto:webroketheweather@gmail.com">webroketheweather@gmail.com</a></p>
                  
                   </i></small>
 
                   <br/>
+                 
              
             <div>
               <code><a href="/" target="_blank">go home</a></code>
