@@ -118,6 +118,13 @@ img {
       DejaVu Sans Mono, Bitstream Vera Sans Mono, Courier New, monospace;
   }
 
+  .scoreboard
+  {
+    padding-top: 4.20rem;
+    font-family: Menlo, Monaco, Lucida Console, Liberation Mono,
+      DejaVu Sans Mono, Bitstream Vera Sans Mono, Courier New, monospace;
+  }
+
   .grid {
     display: flex;
     align-items: center;

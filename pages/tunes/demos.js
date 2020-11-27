@@ -62,15 +62,15 @@ export default function Demos() {
            <FloppyBox width={420} height={420}/>
            </div>
 
+          <div className="scoreboard">
+          <small><b>Scoreboard</b></small>
+          </div>
+        
      
 
-          </div>  
-    
-        
+          </div>     
   
         </Layout>
-         
-        
       )
     }
 
