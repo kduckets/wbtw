@@ -24,11 +24,11 @@ class FloppyBox extends Component {
             },
 
             create() {
-                // game.scale.pageAlignHorizontally = true;
-                // game.scale.pageAlignVertically = true;
-                // game.scale.refresh();
+               
                 // Set the physics system
                 game.physics.startSystem(Phaser.Physics.ARCADE);
+                game.scale.pageAlignHorizontally = true;
+                game.scale.refresh();
                
 
                 // Display the bird on the screen
