@@ -180,6 +180,11 @@ img {
     line-height: 1.5;
   }
 
+  .game{
+    overflow: hidden;
+    overscroll-behavior: contain;
+  }
+
   .logo {
     height: 1em;
   }
