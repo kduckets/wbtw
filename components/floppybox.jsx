@@ -29,6 +29,7 @@ class FloppyBox extends Component {
                 // game.scale.scaleMode = Phaser.ScaleManager.RESIZE;
                 // game.scale.parentIsWindow = true;
                 game.physics.startSystem(Phaser.Physics.ARCADE);
+                game.paused = true; 
                 // game.scale.pageAlignHorizontally = true;
                 // game.scale.refresh();
                
