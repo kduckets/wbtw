@@ -91,10 +91,10 @@ const Demos = () => {
    
             <h1>/wbtw_demos</h1>
         <div className="card">
-          <code>demos_2020</code>
+          <code>the_covid_sessions_demos</code>
           <div>
          <ReactPlayer
-        url="https://soundcloud.com/webroketheweather/sets/demos-2020"
+        url="https://soundcloud.com/webroketheweather/sets/the-covid-sessions-demos"
         width="100%"
         height="440px"
         config={{
@@ -102,6 +102,16 @@ const Demos = () => {
             options: { auto_play: true }
           }
         }}
+         />
+        </div>
+        </div>  
+        <div className="card">
+          <code>demos_2020</code>
+          <div>
+         <ReactPlayer
+        url="https://soundcloud.com/webroketheweather/sets/demos-2020"
+        width="100%"
+        height="440px"
          />
         </div>
         </div>  
