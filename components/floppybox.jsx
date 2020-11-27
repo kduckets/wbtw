@@ -118,7 +118,7 @@ class FloppyBox extends Component {
                     return;
 
                 // Add a vertical velocity to the bird
-                this.bird.body.velocity.y = -300;
+                this.bird.body.velocity.y = -320;
                 game.add.tween(this.bird).to({angle: -20}, 100).start();
                 // this.jumpSound.play();
             },
