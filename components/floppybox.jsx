@@ -26,9 +26,11 @@ class FloppyBox extends Component {
             create() {
                
                 // Set the physics system
+                // game.scale.scaleMode = Phaser.ScaleManager.RESIZE;
+                // game.scale.parentIsWindow = true;
                 game.physics.startSystem(Phaser.Physics.ARCADE);
-                game.scale.pageAlignHorizontally = true;
-                game.scale.refresh();
+                // game.scale.pageAlignHorizontally = true;
+                // game.scale.refresh();
                
 
                 // Display the bird on the screen
