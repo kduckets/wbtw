@@ -24,11 +24,12 @@ class FloppyBox extends Component {
             },
 
             create() {
+                game.scale.pageAlignHorizontally = true;
+                game.scale.pageAlignVertically = true;
+                game.scale.refresh();
                 // Set the physics system
                 game.physics.startSystem(Phaser.Physics.ARCADE);
-                // game.scale.pageAlignHorizontally = true;
-                // game.scale.pageAlignVertically = true;
-                // game.scale.refresh();
+               
 
                 // Display the bird on the screen
                 this.bird = this.game.add.sprite(100, 245, 'bird');
@@ -44,9 +45,9 @@ class FloppyBox extends Component {
                 this.pipes.createMultiple(20, 'pipe'); // Create 20 pipes
 
                 // Call the 'jump' function when the spacekey is hit
-                var spaceKey = this.game.input.keyboard.addKey(Phaser.Keyboard.SPACEBAR);
-                spaceKey.onDown.add(this.jump, this);
-                this.game.input.onDown.add(this.jump, this);
+                // var spaceKey = this.game.input.keyboard.addKey(Phaser.Keyboard.SPACEBAR);
+                // spaceKey.onDown.add(this.jump, this);
+                // this.game.input.onDown.add(this.jump, this);
                 this.game.input.onTap.add(this.jump, this);
 
                 this.timer = game.time.events.loop(1500, this.addRowOfPipes, this);
