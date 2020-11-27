@@ -145,7 +145,7 @@ img {
   .card:focus,
   .card:active {
     /* color: black; */
-    /* animation: glitch 6.9s ease infinite; */
+    animation: glitch 6.9s ease infinite;
     /* animation: blinker 2s step-start infinite; */
     border-color: #0070f3;
     
