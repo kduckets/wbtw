@@ -57,12 +57,12 @@ export default function Demos() {
             <div>
               <code><a href="/" target="_blank">go home</a></code>
             </div>
-      
+            <FloppyBox width={420} height={420}/>
+
 
           </div>  
-          <div>
-          <FloppyBox width={420} height={420}/>
-          </div>
+    
+        
   
         </Layout>
          
