@@ -44,7 +44,7 @@ const Demos = () => {
       .then(snap => {
         const scores = snap.val()
         setScores(scores) })
-    }else
+  }else
     {
       var updates = {};
       updates['/users/' + uid] = scoreData;
