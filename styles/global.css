@@ -103,6 +103,20 @@ img {
     text-align: center;
   }
 
+  table, th, td {
+    border: .1px solid black;
+    max-width: 420px;
+  }
+
+  th, td {
+    padding: 10px;
+  }
+
+  table.center {
+    margin-left: auto;
+    margin-right: auto;
+  }
+
   .description {
     line-height: 1.5;
     font-size: 1.5rem;

@@ -2,15 +2,61 @@ import ReactPlayer from "react-player"
 import Layout from '../../components/layout'
 import FloppyBox from '../../components/floppybox'
 import Head from 'next/head'
-import { useState } from 'react'
+import { useState, useEffect } from 'react'
+import fire from '../../config/fire-config';
+
 
 const Demos = () => {
 
   const [input, setInput] = useState('')
+  const [scores, setScores] = useState([]);  useEffect(() => {
+    fire.database()
+      .ref('users')
+      .once('value')
+      .then(snap => {
+        const scores = snap.val()
+        setScores(scores) 
+      } );
+    }, []);  
+
 
   const submitScore = async (e) => {
+
     e.preventDefault()
+
+    var scoreData = {
+    name: input,
+    score: localStorage.getItem('high_score')
+    };
+
+    const uid = localStorage.getItem('uid');
+    
+    if(!uid){
+    var newPostKey = fire.database().ref('users').push().key;
+    localStorage.setItem('uid', newPostKey);
+    var updates = {};
+    updates['/users/' + newPostKey] = scoreData;
     alert("score submitted")
+    fire.database().ref().update(updates);
+    fire.database()
+      .ref('users')
+      .once('value')
+      .then(snap => {
+        const scores = snap.val()
+        setScores(scores) })
+    }else
+    {
+      var updates = {};
+      updates['/users/' + uid] = scoreData;
+      alert("score submitted")
+      fire.database().ref().update(updates);
+      fire.database()
+      .ref('users')
+      .once('value')
+      .then(snap => {
+        const scores = snap.val()
+        setScores(scores) })
+    }
   }
 
 
@@ -74,8 +120,20 @@ const Demos = () => {
            </div>
 
           <div className="scoreboard">
-          <small><b>scoreboard</b></small>
-          <div className='p-8 justify-center items-center h-screen flex'>
+          <b>scoreboard</b>
+           <table>
+             <tbody>
+            {Object.entries(scores).map((item =>
+            <tr key={item[0]}> 
+              <td><small>{item[1].name}</small></td>
+              <td><small>{item[1].score}</small></td>     
+            </tr>
+             ))}
+             </tbody>
+            </table>
+
+
+          <div>
             <form className='flex'>
             <input type='text'
                    placeholder='name'
