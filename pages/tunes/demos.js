@@ -91,7 +91,7 @@ const Demos = () => {
    
             <h1>/wbtw_demos</h1>
         <div className="card">
-          <code>the_covid_sessions_demos</code>
+          <code>the_covid_sessions</code>
           <div>
          <ReactPlayer
         url="https://soundcloud.com/webroketheweather/sets/the-covid-sessions-demos"
