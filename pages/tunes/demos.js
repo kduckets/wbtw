@@ -15,7 +15,8 @@ const Demos = () => {
       .once('value')
       .then(snap => {
         const scores = snap.val()
-        setScores(scores) 
+        const scores_sorted = Object.entries(scores).sort((a, b) => parseFloat(b[1].score) - parseFloat(a[1].score));
+        setScores(scores_sorted) 
       } );
     }, []);  
 
@@ -43,7 +44,9 @@ const Demos = () => {
       .once('value')
       .then(snap => {
         const scores = snap.val()
-        setScores(scores) })
+        const scores_sorted = Object.entries(scores).sort((a, b) => parseFloat(b[1].score) - parseFloat(a[1].score))
+        setScores(scores_sorted) 
+      })
   }else
     {
       var updates = {};
@@ -55,7 +58,9 @@ const Demos = () => {
       .once('value')
       .then(snap => {
         const scores = snap.val()
-        setScores(scores) })
+        const scores_sorted = Object.entries(scores).sort((a, b) => parseFloat(b[1].score) - parseFloat(a[1].score))
+        setScores(scores_sorted) 
+      })
     }
   }
 
@@ -124,7 +129,9 @@ const Demos = () => {
           <b>scoreboard</b>
            <table>
              <tbody>
-            {Object.entries(scores).map((item =>
+            {
+            
+            scores.map((item =>
             <tr key={item[0]}> 
               <td><small>{item[1].name}</small></td>
               <td><small>{item[1].score}</small></td>     
