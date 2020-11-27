@@ -83,6 +83,11 @@ const Demos = () => {
         url="https://soundcloud.com/webroketheweather/sets/demos-2020"
         width="100%"
         height="440px"
+        config={{
+          soundcloud: {
+            options: { auto_play: true }
+          }
+        }}
          />
         </div>
         </div>  
