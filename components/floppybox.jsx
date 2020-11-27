@@ -126,10 +126,10 @@ class FloppyBox extends Component {
             restartGame: function() {
                 // Start the 'main' state, which restarts the game
                 game.state.start('main');
-                // if (this.high_score && this.score > this.high_score){
-                // localStorage.setItem('high_score', this.score);
-                // this.labelHighScore.text = 'High Score: ' + localStorage.getItem('high_score');
-                // }
+                if (this.high_score && this.score > this.high_score){
+                localStorage.setItem('high_score', this.score);
+                this.labelHighScore.text = 'High Score: ' + localStorage.getItem('high_score');
+                }
                 
             },
 
