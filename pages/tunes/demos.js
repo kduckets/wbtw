@@ -73,6 +73,20 @@ const Demos = () => {
         <link rel="icon" href="/favicon.png" />
         <script type="text/javascript" src="/static/phaser.min.js"></script>
         <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=0"/>
+        <script
+           async
+           src="https://www.googletagmanager.com/gtag/js?id=G-M4C8FHNH82"
+          />
+        <script
+          dangerouslySetInnerHTML={{
+            __html: `
+                  window.dataLayer = window.dataLayer || [];
+                  function gtag(){dataLayer.push(arguments);}
+                  gtag('js', new Date());
+                  gtag('config', 'G-M4C8FHNH82');
+              `,
+          }}
+        />
       </Head>
    
             <h1>/wbtw_demos</h1>
