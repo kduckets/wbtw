@@ -24,9 +24,9 @@ class FloppyBox extends Component {
             },
 
             create() {
-                game.scale.pageAlignHorizontally = true;
-                game.scale.pageAlignVertically = true;
-                game.scale.refresh();
+                // game.scale.pageAlignHorizontally = true;
+                // game.scale.pageAlignVertically = true;
+                // game.scale.refresh();
                 // Set the physics system
                 game.physics.startSystem(Phaser.Physics.ARCADE);
                
