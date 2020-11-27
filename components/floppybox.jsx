@@ -47,9 +47,9 @@ class FloppyBox extends Component {
                 this.pipes.createMultiple(20, 'pipe'); // Create 20 pipes
 
                 // Call the 'jump' function when the spacekey is hit
-                var spaceKey = this.game.input.keyboard.addKey(Phaser.Keyboard.SPACEBAR);
-                spaceKey.onDown.add(this.jump, this);
-                this.game.input.onDown.add(this.jump, this);
+                // var spaceKey = this.game.input.keyboard.addKey(Phaser.Keyboard.SPACEBAR);
+                // spaceKey.onDown.add(this.jump, this);
+                this.game.input.onTap.add(this.jump, this);
         
 
                 this.timer = game.time.events.loop(1500, this.addRowOfPipes, this);
@@ -126,8 +126,6 @@ class FloppyBox extends Component {
             restartGame: function() {
                 // Start the 'main' state, which restarts the game
                 game.state.start('main');
-                console.log(this.score)
-                
                 if (this.high_score && this.score > this.high_score){
                 localStorage.setItem('high_score', this.score);
                 this.labelHighScore.text = 'High Score: ' + localStorage.getItem('high_score');
