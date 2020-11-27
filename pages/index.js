@@ -8,6 +8,7 @@ export default function Home() {
         <title>we broke the weather</title>
         <link rel="icon" href="/favicon.png" />
         <script type="text/javascript" src="/static/phaser.min.js"></script>
+        <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=0"/>
       </Head>
       <Link  href="/tunes/demos">
       <main>
