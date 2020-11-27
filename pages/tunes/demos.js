@@ -141,6 +141,7 @@ const Demos = () => {
                    value={input}
                 onChange={e => setInput(e.target.value)}
               />
+              <br/>
             <button type='submit' onClick={submitScore}>
              submit high score
            </button>
