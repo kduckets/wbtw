@@ -10,25 +10,7 @@ const Demos = () => {
 
   const submitScore = async (e) => {
     e.preventDefault()
-    try {
-      const res = await fetch('./api/subscribe', {
-        method: 'post',
-        headers: {
-          'Content-Type': 'application/json'
-        },
-        body: JSON.stringify({
-          emailAddress: input
-        })
-      })
-      
-      if (res.status === 200) {
-        alert('You are subscribed!')
-      } else {
-        alert('Sorry, something went wrong.')
-      }
-    } catch(err) {
-      alert(err)
-    }
+    alert("score submitted")
   }
 
 
