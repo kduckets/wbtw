@@ -48,8 +48,8 @@ class FloppyBox extends Component {
                 this.pipes.createMultiple(20, 'pipe'); // Create 20 pipes
 
                 // Call the 'jump' function when the spacekey is hit
-                // var spaceKey = this.game.input.keyboard.addKey(Phaser.Keyboard.SPACEBAR);
-                // spaceKey.onDown.add(this.jump, this);
+                var spaceKey = this.game.input.keyboard.addKey(Phaser.Keyboard.SPACEBAR);
+                spaceKey.onDown.add(this.jump, this);
                 this.game.input.onTap.add(this.jump, this);
         
 

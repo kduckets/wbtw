@@ -2,8 +2,37 @@ import ReactPlayer from "react-player"
 import Layout from '../../components/layout'
 import FloppyBox from '../../components/floppybox'
 import Head from 'next/head'
+import { useState } from 'react'
 
-export default function Demos() {
+const Demos = () => {
+
+  const [input, setInput] = useState('')
+
+  const submitScore = async (e) => {
+    e.preventDefault()
+    try {
+      const res = await fetch('./api/subscribe', {
+        method: 'post',
+        headers: {
+          'Content-Type': 'application/json'
+        },
+        body: JSON.stringify({
+          emailAddress: input
+        })
+      })
+      
+      if (res.status === 200) {
+        alert('You are subscribed!')
+      } else {
+        alert('Sorry, something went wrong.')
+      }
+    } catch(err) {
+      alert(err)
+    }
+  }
+
+
+
     return (
       <Layout>  
       <Head>
@@ -63,9 +92,21 @@ export default function Demos() {
            </div>
 
           <div className="scoreboard">
-          <small><b>Scoreboard</b></small>
+          <small><b>scoreboard</b></small>
+          <div className='p-8 justify-center items-center h-screen flex'>
+            <form className='flex'>
+            <input type='text'
+                   placeholder='name'
+                   value={input}
+                onChange={e => setInput(e.target.value)}
+              />
+            <button type='submit' onClick={submitScore}>
+             submit high score
+           </button>
+          </form>
           </div>
-        
+          </div>
+
      
 
           </div>     
@@ -74,5 +115,6 @@ export default function Demos() {
       )
     }
 
+    export default Demos;
   
   
