@@ -1,6 +1,6 @@
 import ReactPlayer from "react-player"
 import Layout from '../../components/layout'
-import Game from '../../components/game'
+import FloppyBox from '../../components/floppybox'
 import Head from 'next/head'
 
 export default function Demos() {
@@ -9,8 +9,9 @@ export default function Demos() {
       <Head>
         <title>/wbtw/demos</title>
         <link rel="icon" href="/favicon.png" />
+        <script type="text/javascript" src="/static/phaser.min.js"></script>
       </Head>
-      <div className='demos'>
+   
             <h1>/wbtw_demos</h1>
         <div className="card">
           <code>demos_2020</code>
@@ -55,13 +56,14 @@ export default function Demos() {
              
             <div>
               <code><a href="/" target="_blank">go home</a></code>
-            </div>      
-          </div>  
+            </div>
+            <div>
+        <FloppyBox width={420} height={420}/>
+        </div>
 
- {/* <div className="game">
-   <Game />
- </div> */}
- </div>
+          </div>  
+       
+  
         </Layout>
         
       )

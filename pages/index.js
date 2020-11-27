@@ -7,6 +7,7 @@ export default function Home() {
       <Head>
         <title>we broke the weather</title>
         <link rel="icon" href="/favicon.png" />
+        <script type="text/javascript" src="/static/phaser.min.js"></script>
       </Head>
       <Link  href="/tunes/demos">
       <main>
