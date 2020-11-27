@@ -1,7 +1,7 @@
 import Phaser from 'phaser';
 
-import bird from '../public/bird.png';
-import pipe from '../public/pipe.png';
+import bird from '../public/static/bird.png';
+import pipe from '../public/static/pipe.png';
 
 class Floppy extends Phaser.Scene {
   constructor(test) {
