@@ -25,6 +25,7 @@ const Demos = () => {
 
     e.preventDefault()
 
+    if(input){
     var scoreData = {
     name: input,
     score: localStorage.getItem('high_score')
@@ -63,6 +64,7 @@ const Demos = () => {
       })
     }
   }
+}
 
 
 
