@@ -12,7 +12,7 @@
     "next": "^10.0.0",
     "react": "16.13.1",
     "react-dom": "16.13.1",
-    "react-player": "^2.7.0",
-    "react-truncate": "^2.4.0"
+    "react-lines-ellipsis": "^0.14.1",
+    "react-player": "^2.7.0"
   }
 }

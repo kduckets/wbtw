@@ -4,8 +4,7 @@ import FloppyBox from '../../components/floppybox'
 import Head from 'next/head'
 import { useState, useEffect } from 'react'
 import fire from '../../config/fire-config';
-import Truncate from 'react-truncate';
-
+import LinesEllipsis from 'react-lines-ellipsis'
 
 const Demos = () => {
 
@@ -170,9 +169,15 @@ const Demos = () => {
             scores.map((item =>
             <tr key={item[0]}> 
              <td>
-             <Truncate lines={3} ellipsis={<span>... <a></a></span>}>
-            <small>{item[1].name}</small>
-            </Truncate>
+               <small>
+             <LinesEllipsis
+                text={item[1].name}
+                maxLine='6'
+                ellipsis='...'
+                trimRight
+                basedOn='letters'
+              />
+              </small>
             </td>
               <td><small>{item[1].score}</small></td>     
             </tr>
