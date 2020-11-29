@@ -41,7 +41,7 @@ class FloppyBox extends Component {
                 game.physics.arcade.enable(this.bird);
                 this.bird.body.gravity.y = 1000;
                 // width of sprite is 50
-                this.bird.body.setSize(44, 44);
+                this.bird.body.setSize(40, 40);
                 this.bird.anchor.setTo(-0.2, 0.5);
 
 
