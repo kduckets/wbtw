@@ -4,9 +4,11 @@ import FloppyBox from '../../components/floppybox'
 import Head from 'next/head'
 import { useState, useEffect } from 'react'
 import fire from '../../config/fire-config';
+import Truncate from 'react-truncate';
 
 
 const Demos = () => {
+
 
   const [input, setInput] = useState('')
   const [scores, setScores] = useState([]);  useEffect(() => {
@@ -167,7 +169,11 @@ const Demos = () => {
             
             scores.map((item =>
             <tr key={item[0]}> 
-              <td><small>{item[1].name}</small></td>
+             <td>
+             <Truncate lines={3} ellipsis={<span>... <a></a></span>}>
+            <small>{item[1].name}</small>
+            </Truncate>
+            </td>
               <td><small>{item[1].score}</small></td>     
             </tr>
              ))}
