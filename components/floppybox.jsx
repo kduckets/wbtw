@@ -36,10 +36,12 @@ class FloppyBox extends Component {
 
                 // Display the bird on the screen
                 this.bird = this.game.add.sprite(100, 245, 'bird');
-
+                
                 // Add gravity to the bird to make it fall
                 game.physics.arcade.enable(this.bird);
                 this.bird.body.gravity.y = 1000;
+                // width of sprite is 50
+                this.bird.body.setSize(44, 44);
                 this.bird.anchor.setTo(-0.2, 0.5);
 
 
@@ -47,8 +49,8 @@ class FloppyBox extends Component {
                 this.pipes.enableBody = true;  // Add physics to the group
                 this.pipes.createMultiple(20, 'pipe'); // Create 20 pipes
 
-                this.death_line = game.add.group();
-                this.death_line.enableBody = true;  // Add physics to the group
+                // this.death_line = game.add.group();
+                // this.death_line.enableBody = true;  // Add physics to the group
 
                 // Call the 'jump' function when the spacekey is hit
                 var spaceKey = this.game.input.keyboard.addKey(Phaser.Keyboard.SPACEBAR);
