@@ -8,7 +8,7 @@ class FloppyBox extends Component {
     }
     createGame(width, height) {
         // Initialize Phaser, and create a 400x490px game
-        var game = new Phaser.Game(window.innerWidth * window.devicePixelRatio, 690, Phaser.AUTO, 'floppybox');
+        var game = new Phaser.Game(window.innerWidth * window.devicePixelRatio, 581, Phaser.AUTO, 'floppybox');
         // Create our 'main' state that will contain the game
         var mainState = {
 
@@ -94,7 +94,7 @@ class FloppyBox extends Component {
                 var hole = Math.floor(Math.random() * 5) + 1;
 
                 // Add the 9 pipes
-                for (var i = 0; i < 10; i++)
+                for (var i = 0; i < 9; i++)
                     if (i != hole && i != hole + 1)
                         this.addOnePipe(width, i * 60 + 10);
 
