@@ -8,7 +8,7 @@ class FloppyBox extends Component {
     }
     createGame(width, height) {
         // Initialize Phaser, and create a 400x490px game
-        var game = new Phaser.Game(window.innerWidth * window.devicePixelRatio, 690, Phaser.AUTO, 'floppybox');
+        var game = new Phaser.Game(window.innerWidth * window.devicePixelRatio, 420, Phaser.AUTO, 'floppybox');
         // Create our 'main' state that will contain the game
         var mainState = {
 
