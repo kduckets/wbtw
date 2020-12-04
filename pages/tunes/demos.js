@@ -160,8 +160,8 @@ const Demos = () => {
                  
              
             <div>
-              <code><a href="https://membership.onlineaction.org/site/Donation2?df_id=19284&19284.donation=form1&addl_info=nav-button&conversion_pg=www.edf.org%2F&_ga=2.192113130.1549475860.1607045714-634390749.1607045714" 
-              target="_blank">fix the weather</a></code>
+              <button class="glow-on-hover"><a href="https://membership.onlineaction.org/site/Donation2?df_id=19284&19284.donation=form1&addl_info=nav-button&conversion_pg=www.edf.org%2F&_ga=2.192113130.1549475860.1607045714-634390749.1607045714" 
+              target="_blank">fix the weather</a></button>
             </div>
            
            <div className="game">
