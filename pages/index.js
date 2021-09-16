@@ -1,6 +1,6 @@
 import Head from 'next/head'
 import Link from 'next/link'
-import React from 'react';
+import React, {useState} from 'react';
 import { createGlobalStyle, ThemeProvider } from 'styled-components';
 
 import { styleReset, Hourglass, Divider, AppBar, Toolbar, Button, TextField, Window, WindowHeader, WindowContent, Panel} from 'react95';
@@ -19,6 +19,12 @@ const GlobalStyles = createGlobalStyle`
 
 
 export default function Home() {
+
+  const [showMe, setShowMe] = useState(false);
+function load(){
+  setShowMe(!showMe);
+}
+
   return (
     <div className="container">
       <Head>
@@ -51,7 +57,11 @@ export default function Home() {
       <GlobalStyles />
        <ThemeProvider theme={original}>
       <main>
-
+      <div style={{
+        display: showMe?"block":"none"
+      }}>
+    <Hourglass size={32} />
+    </div>
       <Link  href="/tunes/demos">
       <Window className='window'>
       <WindowHeader className='window-header'>
@@ -72,17 +82,14 @@ export default function Home() {
  
     </Window>
     </Link>
-    <Hourglass size={32} />
+ 
 
 
       </main>
       <AppBar style={{position: 'relative'}}>
       <Toolbar style={{ justifyContent: 'space-between' ,position: 'relative', bottom:'0', width:'100%'}}>
         <div style={{ position: 'relative', display: 'inline-block'}}>
-          <Button
-
-            style={{ fontWeight: 'bold' }}
-          >
+          <Button style={{ fontWeight: 'bold' }} onClick={load}>
             <img
               src='/win95.jpg'
               alt='react95 logo'
