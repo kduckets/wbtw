@@ -20,8 +20,11 @@ const GlobalStyles = createGlobalStyle`
 
 export default function Home() {
 
-  const [showMe, setShowMe] = useState(false);
-function load(){
+const [showMe, setShowMe] = useState(false);
+
+function playFog(){
+  var audio = new Audio("audio/the_fog_demo.mp3");
+  new Audio(audio).play();
   setShowMe(!showMe);
 }
 
@@ -89,7 +92,7 @@ function load(){
       <AppBar style={{position: 'relative'}}>
       <Toolbar style={{ justifyContent: 'space-between' ,position: 'relative', bottom:'0', width:'100%'}}>
         <div style={{ position: 'relative', display: 'inline-block'}}>
-          <Button style={{ fontWeight: 'bold' }} onClick={load}>
+          <Button style={{ fontWeight: 'bold' }} onClick={playFog}>
             <img
               src='/win95.jpg'
               alt='react95 logo'
