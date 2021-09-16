@@ -8,11 +8,15 @@
     "start": "next start"
   },
   "dependencies": {
+    "@zeit/next-css": "^1.0.1",
     "firebase": "^8.1.1",
     "next": "^10.0.0",
+    "next-images": "^1.8.1",
     "react": "16.13.1",
     "react-dom": "16.13.1",
     "react-lines-ellipsis": "^0.14.1",
-    "react-player": "^2.7.0"
+    "react-player": "^2.7.0",
+    "react95": "^3.8.0",
+    "styled-components": "^5.3.1"
   }
 }

@@ -1,5 +1,22 @@
 import Head from 'next/head'
 import Link from 'next/link'
+import React from 'react';
+import { createGlobalStyle, ThemeProvider } from 'styled-components';
+
+import { styleReset, List, ListItem, Divider, AppBar, Toolbar, Button, TextField, Window, WindowHeader, WindowContent, Panel} from 'react95';
+// pick a theme of your choice
+import original from "react95/dist/themes/original";
+// original Windows95 font (optionally)
+// import ms_sans_serif from "react95/dist/fonts/ms_sans_serif.woff2";
+// import ms_sans_serif_bold from "react95/dist/fonts/ms_sans_serif_bold.woff2";
+
+const GlobalStyles = createGlobalStyle`
+  body {
+    font-family: 'ms_sans_serif';
+  }
+  ${styleReset}
+`;
+
 
 export default function Home() {
   return (
@@ -31,25 +48,52 @@ export default function Home() {
           }}
         />
       </Head>
-      <Link  href="/tunes/demos">
+      <GlobalStyles />
+       <ThemeProvider theme={original}>
       <main>
-        <h1 className="title">
-        404
-        </h1>
+      <Window className='window'>
+      <WindowHeader className='window-header'>
+        <span>404.exe</span>
+      </WindowHeader>
+      <WindowContent>
+        <p>
+      <img src='error.png' height='40px'/>&nbsp;&nbsp;  fatal error: weather not found
+      <br/>
+      <br/>
+      Please contact your systems administrator.
+  
+        </p>
+          <br/>
+          <br/>
+        <Button disabled size='lg' fullWidth>Fix</Button>
+      </WindowContent>
+ 
+    </Window>
 
-        <p className="description">
-          <code>weather not found</code>
-        </p> 
+
       </main>
-      </Link>
-      <footer>
-        <Link
-          href="/tunes/demos">
-          <small>powered by{' '}
-          <span style={{color:"grey"}}>wbtw</span>
-          </small>
-        </Link>
-      </footer>
+      <AppBar style={{position: 'relative'}}>
+      <Toolbar style={{ justifyContent: 'space-between' ,position: 'relative', bottom:'0', width:'100%'}}>
+        <div style={{ position: 'relative', display: 'inline-block'}}>
+          <Button
+
+            style={{ fontWeight: 'bold' }}
+          >
+            <img
+              src='/win95.jpg'
+              alt='react95 logo'
+              style={{ height: '20px', marginRight: 4 }}
+            />
+            Start
+          </Button>
+          
+        </div>
+
+        {/* <TextField placeholder='Search...' width={150} /> */}
+      </Toolbar>
+    </AppBar>
+        </ThemeProvider>
     </div>
+  
   )
 }

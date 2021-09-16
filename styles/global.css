@@ -1,13 +1,16 @@
 
   html,
   body {
+    background-image: url(../public/clouds.jpg);
     padding: 0;
     margin: 0;
     font-family: -apple-system, BlinkMacSystemFont, Segoe UI, Roboto,
       Oxygen, Ubuntu, Cantarell, Fira Sans, Droid Sans, Helvetica Neue,
       sans-serif;
     overflow-x: hidden;
-    overflow-y: scroll !important;
+    overflow-y: hidden;
+
+    /* overflow-y: scroll !important; */
   }
 
   * {
@@ -29,7 +32,6 @@ a:hover {
 
 img {
   max-width: 100%;
-  display: block;
 }
 .container {
     min-height: 100vh;
@@ -37,10 +39,12 @@ img {
     flex-direction: column;
     justify-content: center;
     align-items: center;
+    max-width: 100% !important;
+    padding: 0 !important;
+
   }
 
   main {
-    padding: 5rem 0;
     flex: 1;
     display: flex;
     flex-direction: column;
@@ -48,13 +52,10 @@ img {
     align-items: center;
   }
 
+
   footer {
     width: 100%;
     height: 100px;
-    border-top: 1px solid #eaeaea;
-    display: flex;
-    justify-content: center;
-    align-items: center;
   }
 
   footer img {
@@ -321,4 +322,6 @@ img {
       flex-direction: column;
     }
   }
+
+
 
