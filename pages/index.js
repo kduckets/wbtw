@@ -24,6 +24,7 @@ const [showMe, setShowMe] = useState(false);
 
 function playFog(){
   var audio = new Audio("audio/the_fog_demo.mp3");
+  audio.type = 'audio/mpeg';
   new Audio(audio).play();
   setShowMe(!showMe);
 }
