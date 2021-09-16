@@ -8,9 +8,9 @@
       Oxygen, Ubuntu, Cantarell, Fira Sans, Droid Sans, Helvetica Neue,
       sans-serif;
     overflow-x: hidden;
-    overflow-y: hidden;
+    /* overflow-y: hidden; */
 
-    /* overflow-y: scroll !important; */
+    overflow-y: scroll !important;
   }
 
   * {
