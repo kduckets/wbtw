@@ -3,7 +3,7 @@ import Link from 'next/link'
 import React from 'react';
 import { createGlobalStyle, ThemeProvider } from 'styled-components';
 
-import { styleReset, List, ListItem, Divider, AppBar, Toolbar, Button, TextField, Window, WindowHeader, WindowContent, Panel} from 'react95';
+import { styleReset, Hourglass, Divider, AppBar, Toolbar, Button, TextField, Window, WindowHeader, WindowContent, Panel} from 'react95';
 // pick a theme of your choice
 import original from "react95/dist/themes/original";
 // original Windows95 font (optionally)
@@ -51,6 +51,7 @@ export default function Home() {
       <GlobalStyles />
        <ThemeProvider theme={original}>
       <main>
+
       <Link  href="/tunes/demos">
       <Window className='window'>
       <WindowHeader className='window-header'>
@@ -71,6 +72,7 @@ export default function Home() {
  
     </Window>
     </Link>
+    <Hourglass size={32} />
 
 
       </main>
