@@ -51,6 +51,7 @@ export default function Home() {
       <GlobalStyles />
        <ThemeProvider theme={original}>
       <main>
+      <Link  href="/tunes/demos">
       <Window className='window'>
       <WindowHeader className='window-header'>
         <span>404.exe</span>
@@ -69,6 +70,7 @@ export default function Home() {
       </WindowContent>
  
     </Window>
+    </Link>
 
 
       </main>
