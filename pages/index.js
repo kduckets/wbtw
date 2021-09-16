@@ -2,6 +2,7 @@ import Head from 'next/head'
 import Link from 'next/link'
 import React, {useState} from 'react';
 import { createGlobalStyle, ThemeProvider } from 'styled-components';
+import audio from '../public/audio/the_fog_demo.mp3';
 
 import { styleReset, Hourglass, Divider, AppBar, Toolbar, Button, TextField, Window, WindowHeader, WindowContent, Panel} from 'react95';
 // pick a theme of your choice
@@ -23,8 +24,6 @@ export default function Home() {
 const [showMe, setShowMe] = useState(false);
 
 function playFog(){
-  var audio = new Audio("audio/the_fog_demo.mp3");
-  audio.type = 'audio/mpeg';
   new Audio(audio).play();
   setShowMe(!showMe);
 }
