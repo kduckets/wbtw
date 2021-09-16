@@ -77,7 +77,7 @@ function load(){
         </p>
           <br/>
           <br/>
-        <Button disabled size='lg' fullWidth>Fix</Button>
+        <Button disabled size='lg' fullWidth>Ok</Button>
       </WindowContent>
  
     </Window>
