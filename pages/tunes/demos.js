@@ -165,7 +165,7 @@ const Demos = () => {
             </div> */}
            
            <div className="game">
-           <FloppyBox width={300} height={300}/>
+           <FloppyBox width={420} height={300}/>
            </div>
 
           <div className="scoreboard">
