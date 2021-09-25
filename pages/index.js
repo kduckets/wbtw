@@ -32,7 +32,7 @@ function playFog(){
         <meta name="description" content="Fuzzy, proggy, mathy, jazzy, occasionally danceable, usually mad about something rock from Boston." />
         <meta name="twitter:card" value="we broke the weather"/>
         <meta property="og:title" content="we broke the weather" />
-        <meta property="og:type" content="website" />
+        <meta property="og:type" content="article" />
         <meta property="og:url" content="https://webroketheweather.com/" />
         <meta property="og:image" content="https://webroketheweather.com/wbtw-midway.jpg" />
         <meta property="og:description" content="Fuzzy, proggy, mathy, jazzy, occasionally danceable, usually mad about something rock from Boston." /> 
