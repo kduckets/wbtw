@@ -1,7 +1,6 @@
 
   html,
   body {
-    background-image: url(../public/clouds.jpg);
     background-attachment: fixed;
     background-repeat: no-repeat;
     padding: 0;
@@ -9,16 +8,9 @@
     font-family: -apple-system, BlinkMacSystemFont, Segoe UI, Roboto,
       Oxygen, Ubuntu, Cantarell, Fira Sans, Droid Sans, Helvetica Neue,
       sans-serif;
-<<<<<<< HEAD
-    overflow-x: hidden;
-    /* overflow-y: hidden; */
-
     overflow-y: scroll !important;
-=======
-    overflow: scroll !important;
->>>>>>> parent of b3bc8b3 (Update global.css)
-  }
 
+  }
   * {
     box-sizing: border-box;
   }

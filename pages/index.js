@@ -8,7 +8,6 @@ const GlobalStyles = createGlobalStyle`
   body {
     font-family: 'ms_sans_serif';
   }
-  ${styleReset}
 `;
 
 
@@ -51,71 +50,10 @@ function playFog(){
           }}
         />
       </Head>
-      <GlobalStyles />
-       <ThemeProvider theme={original}>
+     
       <main>
-      <div style={{
-        display: showMe?"block":"none"
-      }}>
-    <Hourglass size={32} />
-    </div>
-      <Link  href="/tunes/demos">
-      {/* <Window className='window'>
-      <WindowHeader className='window-header'>
-        <span>404.exe</span>
-      </WindowHeader>
-      <WindowContent>
-        <p>
-      <img src='error.png' height='40px'/>&nbsp;&nbsp;  fatal error: weather not found
-      <br/>
-      <br/>
-      Please contact your systems administrator.
-  
-        </p>
-          <br/>
-          <br/>
-        <Button disabled size='lg' fullWidth>Ok</Button>
-      </WindowContent>
- 
-    </Window> */}
-    <Alert
-
-        title="404.exe"
-
-        type='error'
-
-        message="fatal error: weather broken"
-
-        closeAlert={handleCloseAlert}
-
-        hasSound='true'
-
-        buttons={[{ value: 'OK', onClick: handleCloseAlert }]}
-/>
-    </Link>
- 
-
-
       </main>
-      <AppBar style={{position: 'relative'}}>
-      <Toolbar style={{ justifyContent: 'space-between' ,position: 'relative', bottom:'0', width:'100%'}}>
-        <div style={{ position: 'relative', display: 'inline-block'}}>
-          <Button style={{ fontWeight: 'bold' }} onClick={playFog}>
-            <img
-              src='/win95.jpg'
-              alt='react95 logo'
-              style={{ height: '20px', marginRight: 4 }}
-            />
-            Start
-          </Button>
-          
         </div>
-
-        {/* <TextField placeholder='Search...' width={150} /> */}
-      </Toolbar>
-    </AppBar>
-        </ThemeProvider>
-    </div>
   
   )
 }

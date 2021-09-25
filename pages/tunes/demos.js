@@ -1,4 +1,3 @@
-import ReactPlayer from "react-player"
 import Layout from '../../components/layout'
 import FloppyBox from '../../components/floppybox'
 import Head from 'next/head'
@@ -209,11 +208,7 @@ const Demos = () => {
            </button>
           </form>
           </div>
-          </div>
-
-     
-
-          </div>     
+          </div>  
   
         </Layout>
       )
