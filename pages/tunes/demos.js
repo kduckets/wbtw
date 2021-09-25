@@ -97,8 +97,7 @@ const Demos = () => {
           }}
         />
       </Head>
-   
-            <h1>/wbtw_demos</h1>
+  
         {/* <div className="card">
           <code>the_covid_sessions</code>
           <div>
