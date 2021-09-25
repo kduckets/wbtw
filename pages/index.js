@@ -1,15 +1,8 @@
 import Head from 'next/head'
 import Link from 'next/link'
 import React, {useState} from 'react';
-import { createGlobalStyle, ThemeProvider } from 'styled-components';
-// import audio from '../public/audio/the_fog_demo.mp3';
+import { createGlobalStyle } from 'styled-components';
 
-import { styleReset, Hourglass, Divider, AppBar, Toolbar, Button, TextField, Window, WindowHeader, WindowContent, Panel} from 'react95';
-// pick a theme of your choice
-import original from "react95/dist/themes/original";
-// original Windows95 font (optionally)
-// import ms_sans_serif from "react95/dist/fonts/ms_sans_serif.woff2";
-// import ms_sans_serif_bold from "react95/dist/fonts/ms_sans_serif_bold.woff2";
 
 const GlobalStyles = createGlobalStyle`
   body {
@@ -22,6 +15,7 @@ const GlobalStyles = createGlobalStyle`
 export default function Home() {
 
 const [showMe, setShowMe] = useState(false);
+const handleCloseAlert = () => toggleShowAlert(false);
 
 function playFog(){
   // new Audio(audio).play();
@@ -66,7 +60,7 @@ function playFog(){
     <Hourglass size={32} />
     </div>
       <Link  href="/tunes/demos">
-      <Window className='window'>
+      {/* <Window className='window'>
       <WindowHeader className='window-header'>
         <span>404.exe</span>
       </WindowHeader>
@@ -83,7 +77,21 @@ function playFog(){
         <Button disabled size='lg' fullWidth>Ok</Button>
       </WindowContent>
  
-    </Window>
+    </Window> */}
+    <Alert
+
+        title="404.exe"
+
+        type='error'
+
+        message="fatal error: weather broken"
+
+        closeAlert={handleCloseAlert}
+
+        hasSound='true'
+
+        buttons={[{ value: 'OK', onClick: handleCloseAlert }]}
+/>
     </Link>
  
 

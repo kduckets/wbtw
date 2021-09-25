@@ -8,6 +8,10 @@
     "start": "next start"
   },
   "dependencies": {
+    "@react95/core": "^5.5.0",
+    "@react95/icons": "^2.0.4",
+    "@types/styled-components": "^5.1.14",
+    "@types/xstyled__styled-components": "^1.19.2",
     "@zeit/next-css": "^1.0.1",
     "firebase": "^8.1.1",
     "next": "^10.0.0",
@@ -22,6 +26,9 @@
     "url-loader": "^4.1.1"
   },
   "devDependencies": {
-    "file-loader": "^6.2.0"
+    "@svgr/webpack": "^5.5.0",
+    "file-loader": "^6.2.0",
+    "next-fonts": "^1.5.1",
+    "next-transpile-modules": "^8.0.0"
   }
 }

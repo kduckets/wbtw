@@ -100,7 +100,7 @@ const Demos = () => {
       </Head>
    
             <h1>/wbtw_demos</h1>
-        <div className="card">
+        {/* <div className="card">
           <code>the_covid_sessions</code>
           <div>
          <ReactPlayer
@@ -164,7 +164,7 @@ const Demos = () => {
               target="_blank">
               <button class="glow-on-hover">fix the weather</button>
               </a>
-            </div>
+            </div> */}
            
            <div className="game">
            <FloppyBox width={420} height={420}/>
