@@ -96,7 +96,7 @@ class FloppyBox extends Component {
                 var hole = Math.floor(Math.random() * 5) + 1;
 
                 // Add the 9 pipes
-                for (var i = 0; i < 7; i++)
+                for (var i = 0; i < 8; i++)
                     if (i != hole && i != hole + 1)
                         this.addOnePipe(width, i * 60 + 10);
 
